@@ -4,16 +4,43 @@ Ce guide vous aidera à personnaliser votre profil GitHub pour le rendre unique 
 
 ## 📝 Sections à Personnaliser
 
-### 1. En-tête Animé
+### 1. Bannière d'En-tête (Capsule Render)
+
+La bannière utilise `capsule-render.vercel.app` qui est rendu via `camo.githubusercontent.com` :
+
+```markdown
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Samuel%20Malpin&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" />
+```
+
+**Paramètres personnalisables :**
+- `text=` : Votre nom (encodé URL, espaces = %20)
+- `type=` : waving, wave, cylinder, rounded, shark, transparent, soft, rect, slice
+- `color=` : gradient, timeGradient, ou code hex (ex: 0094FF)
+- `customColorList=` : palette de couleurs (0-24)
+- `height=` : hauteur en pixels (défaut: 180)
+- `fontSize=` : taille du texte (défaut: 42)
+- `animation=` : fadeIn, scaleIn, blink, blinking, twinkling
+
+**Autres types de bannières :**
+```markdown
+<!-- Type: Shark -->
+<img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=140&section=header&text=Votre%20Nom&fontSize=50"/>
+
+<!-- Type: Cylinder -->
+<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:EEFF00,100:a82da8&text=Votre%20Nom&fontColor=fff&fontSize=50"/>
+```
+
+### 2. En-tête Animé (Typing SVG)
 ```markdown
 <img src="https://readme-typing-svg.herokuapp.com?..." />
 ```
 **Comment personnaliser :**
-- Modifiez le texte dans `lines=` en remplaçant `Salut+%F0%9F%91%8B+Je+suis+Samuel+Malpin` par votre nom
+- Modifiez le texte dans `lines=` (plusieurs lignes séparées par `;`)
 - Changez la couleur avec le paramètre `color=` (ex: `color=00FF00` pour vert)
 - Ajustez la vitesse avec `duration=` et `pause=`
+- Ajoutez `multiline=true` pour afficher plusieurs lignes simultanément
 
-### 2. À Propos de Moi
+### 3. À Propos de Moi
 Remplacez les sections suivantes avec vos informations :
 - ✏️ Votre description personnelle
 - 🔭 Sur quoi vous travaillez actuellement
@@ -21,7 +48,7 @@ Remplacez les sections suivantes avec vos informations :
 - 👯 Type de collaborations recherchées
 - ⚡ Un fait amusant vous concernant
 
-### 3. Technologies & Outils
+### 4. Technologies & Outils
 
 #### Ajouter/Retirer des Badges
 Utilisez [shields.io](https://shields.io) pour créer des badges personnalisés.
@@ -189,6 +216,49 @@ Changez le style du compteur :
 <!-- Style plastic -->
 [![Profile Views](https://komarev.com/ghpvc/?username=samuelmalpin&style=plastic)](https://github.com/samuelmalpin)
 ```
+
+### Calendrier de Contribution GitHub
+
+Le calendrier de contribution utilise `ghchart.rshah.org` (rendu via camo.githubusercontent.com) :
+```markdown
+<img src="https://ghchart.rshah.org/a177f7/samuelmalpin" alt="Calendrier de contribution" />
+```
+
+**Personnalisation :**
+- Changez la couleur en remplaçant `a177f7` par votre code couleur hex (sans #)
+- Exemples : `409ba5` (bleu), `ff6b6b` (rouge), `4ecdc4` (cyan)
+
+### Métriques Détaillées GitHub
+
+Les métriques utilisent `metrics.lecoq.io` pour générer des visualisations complètes :
+```markdown
+<img src="https://metrics.lecoq.io/votre-username?template=classic&..." />
+```
+
+**Générateur de configuration :**
+Visitez [metrics.lecoq.io](https://metrics.lecoq.io) pour personnaliser vos métriques avec une interface visuelle.
+
+**Options populaires :**
+- `languages=1` : Afficher les langages
+- `introduction=1` : Introduction du profil
+- `achievements=1` : Trophées et accomplissements
+- `repositories=1` : Statistiques des repos
+- `notable=1` : Contributions notables
+
+### Graphique d'Activité Personnalisé
+
+```markdown
+<!-- Avec titre personnalisé et couleurs -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=samuelmalpin&custom_title=Mon%20Activité&bg_color=1a1b27&color=a177f7&line=70a5fd&point=bf91f3&area=true&hide_border=true"/>
+```
+
+**Paramètres personnalisables :**
+- `bg_color` : Couleur de fond
+- `color` : Couleur principale
+- `line` : Couleur de la ligne
+- `point` : Couleur des points
+- `area` : Remplissage de la zone (true/false)
+- `custom_title` : Titre personnalisé (encodé URL)
 
 ## 🔧 Dépannage
 
