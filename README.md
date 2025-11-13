@@ -4,9 +4,6 @@
 
 </div>
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2800&pause=2000&color=A177F7&center=true&vCenter=true&width=940&lines=Salut+%F0%9F%91%8B+Bienvenue+sur+mon+profil+GitHub+!;Développeur+passionné+%F0%9F%9A%80;Toujours+en+train+d'apprendre+%F0%9F%92%A1" alt="Typing SVG" />
-</div>
 
 <div align="center">
 
